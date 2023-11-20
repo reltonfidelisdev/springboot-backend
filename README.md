@@ -1,4 +1,4 @@
-# Projeto Java Web com Spring Boot 2024
+# Projeto Java Web com Spring Boot
 >  Construindo uma API REST com banco de dados usando Java e Spring Boot 
 
 ## Realização
@@ -76,14 +76,23 @@ spring.jpa.properties.hibernate.format_sql=true
 #### Script SQL
 
 ```sql
-INSERT INTO tb_department(name) VALUES ('Gestão');
-INSERT INTO tb_department(name) VALUES ('Informática');
+INSERT INTO tb_department(name) VALUES ('Human Resources');
+INSERT INTO tb_department(name) VALUES ('Personal Department');
+INSERT INTO tb_department(name) VALUES ('Financial');
+INSERT INTO tb_department(name) VALUES ('Administrative');
+INSERT INTO tb_department(name) VALUES ('Juridic');
+INSERT INTO tb_department(name) VALUES ('Business');
+INSERT INTO tb_department(name) VALUES ('Business Ineteligence');
+INSERT INTO tb_department(name) VALUES ('Informacion Technology');
+INSERT INTO tb_department(name) VALUES ('Sales');
+INSERT INTO tb_department(name) VALUES ('Client Success');
+INSERT INTO tb_department(name) VALUES ('Technical Support');
+INSERT INTO tb_department(name) VALUES ('NOC');
 
-INSERT INTO tb_user(department_id, name, email) VALUES (1, 'Maria', 'maria@gmail.com');
+INSERT INTO tb_user(department_id, name, email) VALUES (8, 'Relton Lima', 'dev.relton@gmail.com');
 INSERT INTO tb_user(department_id, name, email) VALUES (1, 'Bob', 'bob@gmail.com');
 INSERT INTO tb_user(department_id, name, email) VALUES (2, 'Alex', 'alex@gmail.com');
 INSERT INTO tb_user(department_id, name, email) VALUES (2, 'Ana', 'ana@gmail.com');
 ```
 #### Collection Postman
-
-https://www.getpostman.com/collections/ac4a49113c4024e47d4f
+https://www.postman.com/aerospace-explorer-75255150/workspace/thingsacademyjavawebspringboot/request/31276041-4f432843-f7bd-4824-8a62-61ca3bab59f4
