@@ -82,7 +82,7 @@ INSERT INTO tb_department(name) VALUES ('Financial');
 INSERT INTO tb_department(name) VALUES ('Administrative');
 INSERT INTO tb_department(name) VALUES ('Juridic');
 INSERT INTO tb_department(name) VALUES ('Business Intelligence');
-INSERT INTO tb_department(name) VALUES ('Informacion Technology');
+INSERT INTO tb_department(name) VALUES ('Information Technology');
 INSERT INTO tb_department(name) VALUES ('Sales');
 INSERT INTO tb_department(name) VALUES ('Client Success');
 INSERT INTO tb_department(name) VALUES ('Technical Support');
