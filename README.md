@@ -87,7 +87,7 @@ INSERT INTO tb_department(name) VALUES ('Informacion Technology');
 INSERT INTO tb_department(name) VALUES ('Sales');
 INSERT INTO tb_department(name) VALUES ('Client Success');
 INSERT INTO tb_department(name) VALUES ('Technical Support');
-INSERT INTO tb_department(name) VALUES ('NOC');
+INSERT INTO tb_department(name) VALUES ('NOC: Network Operations Center');
 
 INSERT INTO tb_user(department_id, name, email) VALUES (8, 'Relton Lima', 'dev.relton@gmail.com');
 INSERT INTO tb_user(department_id, name, email) VALUES (1, 'Bob', 'bob@gmail.com');
