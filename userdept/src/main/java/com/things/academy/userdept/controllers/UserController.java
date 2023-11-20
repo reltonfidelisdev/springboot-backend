@@ -32,10 +32,19 @@ public class UserController {
 		return result;
 		
 	}
-	
+
 	@PostMapping()
 	public User insert(@RequestBody User user) {
 		User result = repo.save(user); 
 		return user;
+	}
+	
+	@PostMapping("/remove")
+	public void remove(@RequestBody User user) {
+		try {			
+			repo.delete(user);
+		} catch (Exception e) {
+			System.err.println("* Falha ao remover usuario \n" + e);
+		}
 	}
 }
