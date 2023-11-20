@@ -38,5 +38,14 @@ public class DepartmentController {
 		Department result = repo.save(department);
 		return department;
 	}
+	
+	@PostMapping("/remove")
+	public void remove(@RequestBody Department department) {
+		try {
+			repo.delete(department);
+		} catch (Exception e) {
+			System.err.println("Can't remove department. " + e);
+		}
+	}
 
 }
