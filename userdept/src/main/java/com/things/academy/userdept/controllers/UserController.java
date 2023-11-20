@@ -3,9 +3,11 @@ package com.things.academy.userdept.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,13 +35,19 @@ public class UserController {
 		
 	}
 
-	@PostMapping()
+	@PostMapping
 	public User insert(@RequestBody User user) {
 		User result = repo.save(user); 
-		return user;
+		return result;
 	}
 	
-	@PostMapping("/remove")
+	@PutMapping
+	public User update(@RequestBody User user) {
+		User result = repo.saveAndFlush(user);
+		return result;
+	}
+		
+	@DeleteMapping
 	public void remove(@RequestBody User user) {
 		try {			
 			repo.delete(user);
